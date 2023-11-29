@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&family=Outfit:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Hanken Grotesk;
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+body {
+    background-color: fff;
+}
+
+
+/* Left Part -------------------------------- */
+
+.container {
+    margin: 10% auto;
+    background-color: white;
+    height: 512px;
+    width: 730px;
+    border-radius: 30px;
+    display: flex;
+    box-shadow: 13px 13px 20px -13px hsl(241,72%,45%,0.23);
+}
+
+.results {
+    background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    height: 512px;
+    width: 365px;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.results > p, .circle > p{
+    margin-top: 20px;
+    color: hsl(241, 100%, 89%);
+}
+
+.results > h1 {
+    font-size: 30px;
+    margin-top: 30px;
+    color: hsl(221, 100%, 96%);
+}
+
+.circle {
+    margin-top: 20px;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    text-align: center;
+}
+
+.note {
+    margin-top: 30px;
+    font-weight: 800;
+    font-size: 90px;
+    color: hsl(221, 100%, 96%);
+}
+
+
+.info {
+    padding-inline: 30px;
+}
+
+/* Right Part --------------------------------- */
+
+.summary {
+    margin-left: 50px;
+    height: 512px;
+    width: 265px;
+    background-color: white;
+}
+
+.summary > h1 {
+    margin-top: 20px;
+    color: hsl(224, 30%, 27%);
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.summary > div {
+    margin-top: 20px;
+    height: 60px;
+    width: 100%;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.summary > div > div {
+    display: flex;
+}
+
+
+.red{
+    background-color: hsla(0, 100%, 67%, 0.1);
+}
+
+.red > div > p {
+    font-size: 20px;
+    margin-left: 15px;
+    font-weight: 700;
+    color: hsl(0, 100%, 67%);
+}
+
+.yellow {
+    background-color: hsla(39, 100%, 56%, 0.1);
+}
+
+.yellow > div > p {
+    font-size: 20px;
+    margin-left: 15px;
+    font-weight: 700;
+    color: hsl(39, 100%, 56%);
+}
+
+.green {
+    background-color: hsla(166, 100%, 37%, 0.1);
+}
+
+.green > div > p {
+    font-size: 20px;
+    margin-left: 15px;
+    font-weight: 700;
+    color: hsl(166, 100%, 37%);
+}
+
+.purple {
+    background-color: hsla(234, 85%, 45%, 0.1);
+}
+
+.purple > div > p {
+    font-size: 20px;
+    margin-left: 15px;
+    font-weight: 700;
+    color: hsl(234, 85%, 45%);
+}
+
+
+#id1 {
+    font-size: 20px;
+    font-weight: 700;
+    color: hsl(224, 30%, 27%);
+}
+
+#id2 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: hsla(224, 30%, 27%, 0.5);
+}
+
+img {
+    margin-left: 10px;
+}
+
+button {
+    margin-top: 40px;
+    height: 60px;
+    width: 100%;
+    border: transparent;
+    border-radius: 40px;
+    background-color: hsl(224, 30%, 27%);
+    color: hsl(221, 100%, 96%);
+    cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+        width: fit-content;
+        display: grid;
+        height: 100vh;
+        place-items: center;
+        margin: 0;
+        box-shadow: none;
+    }
+    .results {
+        margin: 0;
+        height: 100%;
+        width: 100%;
+        border-radius: 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;    
+        border-bottom-left-radius: 10%;
+        border-bottom-right-radius: 10%;
+    }
+    .summary {
+        margin: 0;
+        border-radius: 0px;
+        width: 100%;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .summary > div {
+        width: 85%;
+    }
+    button {
+        width: 85%;
+    }
+    .summary > h1 {
+        align-self: baseline;
+        margin-left: 7.5% ;
+    }
+}
